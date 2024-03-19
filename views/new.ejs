@@ -1,0 +1,42 @@
+<%- include('partials/header.ejs'); -%>
+
+<form class="input-fields" method="post" action="/add">
+  <div class="title-input">
+    <label for="newTitle">Title</label>
+    <br />
+    <input type="text" name="newTitle" placeholder="" />
+  </div>
+  <br>
+  <div class="author-input">
+    <label for="newAuthor">Author</label>
+    <br />
+    <input type="text" name="newAuthor" placeholder="" />
+  </div>
+  <br>
+  <div class="date-input">
+    <label for="newDate">Date Read</label>
+    <br />
+    <input type="date" name="newDate">
+  </div>
+  <div class="summary-input">
+    <label for="newSummary">Book Description</label>
+    <br />
+    <textarea name="newSummary"></textarea>
+  </div>
+  <div class="input-line">
+    <div class="isbn-input">
+      <label for="newISBN">ISBN</label>
+      <br />
+      <input type="text" name="newISBN" maxlength="10"/>
+    </div>
+    <div class="rating-input">
+      <label for="newRating">Rating</label>
+      <br />
+      <input type="number" min="1" max="10" name="newRating" />
+    </div>
+  </div>
+  <br><br>
+  <button>Submit</button>
+</form>
+
+<%- include('partials/footer.ejs'); -%>

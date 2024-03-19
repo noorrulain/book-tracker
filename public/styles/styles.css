@@ -1,0 +1,107 @@
+body{
+    background-color: #F2EFE5;
+    overflow-x: hidden;
+    font-family: "Wix Madefor Display", sans-serif;
+}
+header{
+    width: 100vw;
+    background-color: #B4B4B8;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    width: 45vw;
+    justify-content: space-evenly;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+.nav-link:hover{
+    color: #E3E1D9;
+}
+.search-bar{
+    margin-left: 15px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 0.25rem;
+    height: 25px;
+    padding: 5px 
+}
+.header-title{
+    padding: 3px;
+    padding-left: 15px;
+    color: white;
+}
+main{
+    position: absolute;
+    margin-top: 85px;
+}
+h1 {
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.book-container{
+    width: 98vw;
+    display: flex;
+    background-color: #C7C8CC;
+    height: 250px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.25rem;
+}
+.book-info{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: flex-start;
+}
+.book-title{
+    font-weight: 500;
+    margin: 0;
+    font-size: 25px;
+}
+.book-subheading{
+    font-weight: 350;
+    margin: 0;
+    font-size: 15px;
+}
+.book-author{
+    font-style: italic;
+}
+.book-summary{
+    text-align: justify;
+    width: 85vw;
+}
+.input-fields{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+textarea{
+    width: 60vw;
+    height: 25vh;
+    resize: none;
+}
+.input-line{
+    display: flex;
+    width: 60vw;
+    justify-content: center;
+    gap: 15px;
+}

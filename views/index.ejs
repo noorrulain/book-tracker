@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs'); -%> 
+
+<section>
+<div class="container">
+    <% for (let i=0; i<books.length; i++){ %>
+        <div class="book-container">
+        <img src="<%=books[i].url %>" height="200"/>
+        <div class="book-info">
+            <p class="book-title"><%= books[i].title %></h2>
+            <p class="book-subheading"><span class="book-author"><%= books[i].author %></span> <span> - <b><%= books[i].rating %></b>/10 </span></p>
+            <p class="book-summary"><%= books[i].summary %></p>
+        </div>
+        </div>
+        <br>
+    <% } %> 
+</div>
+</section>
+
+<%- include('partials/footer.ejs'); -%>
