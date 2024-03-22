@@ -29,6 +29,22 @@ app.get("/", async (req, res) => {
   res.render("index.ejs", { books: bookArray });
 });
 
+app.get("/rating", async (req, res) => {
+  const result = await db.query(
+    "SELECT r.id AS id, r.url AS URL, title, author, read_date, rating, book_summary AS summary FROM book_data AS d JOIN read_books AS r ON r.id=d.id ORDER BY rating DESC;"
+  );
+  const bookArray = result.rows;
+  res.render("index.ejs", { books: bookArray });
+});
+
+app.get("/title", async (req, res) => {
+  const result = await db.query(
+    "SELECT r.id AS id, r.url AS URL, title, author, read_date, rating, book_summary AS summary FROM book_data AS d JOIN read_books AS r ON r.id=d.id ORDER BY title;"
+  );
+  const bookArray = result.rows;
+  res.render("index.ejs", { books: bookArray });
+});
+
 app.get("/favs", async (req, res) => {
   const result = await db.query(
     "SELECT r.id AS id, r.url AS URL, title, author, read_date, rating, book_summary AS summary FROM book_data AS d JOIN read_books AS r ON r.id=d.id WHERE rating=10;"

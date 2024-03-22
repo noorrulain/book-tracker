@@ -1,6 +1,8 @@
 <%- include('partials/header.ejs'); -%> 
 
 <section>
+<h2>Welcome to my book journey.</h2>
+<p id="sub-text">You can sort all the books I've read by <a href="/" class="sort-link"><em>latest</em></a>, <a href="/rating" class="sort-link"><em>rating</em></a> or <a href="/title" class="sort-link"><em>title</em></a>.</p>
 <div class="container">
     <% for (let i=0; i<books.length; i++){ %>
         <div class="book-container">

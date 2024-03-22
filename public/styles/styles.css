@@ -105,3 +105,15 @@ textarea{
     justify-content: center;
     gap: 15px;
 }
+h2{
+    margin: 0;
+}
+#sub-text{
+    margin-top: 5px;
+}
+.sort-link{
+    color: black;
+}
+.sort-link:hover{
+    color: gray;
+}
